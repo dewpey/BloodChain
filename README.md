@@ -8,4 +8,4 @@ Install node packages
 
 Edit the index.js file and put in the new ethereum address
 
-Note: The wwebsite isn't function right now. It was previously but something went wrong =(
+Note: The website isn't function right now. It was previously but something went wrong =(
