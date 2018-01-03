@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BloodChain Web</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+
+<body class="container">
+    <ul class="nav nav-tabs">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Query</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="create.html">Create</a>
+        </li>
+      </ul>
+  <h1>Blood Data Query Demo</h1>
+  
+
+  <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" id="bloodID" class="form-control" placeholder="BloodID" aria-label="Search for...">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button" onclick="loadData()">Query</button>
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BloodID</td>
+            <td id="bloodIDBox"></td>
+            </tr>
+          <tr>
+            <td>Creator's Address</td>
+            <td id="creatorAddress"></td>
+            </tr>
+          <tr>
+            <td>Creation Date</td>
+            <td id="creationDate"></td>
+            </tr>
+          <tr>
+              <td>Blood Type</td>
+              <td id="bloodType"></td>
+              </tr>
+            <tr>
+          <tr>
+            <td>Amount</td>
+            <td id="amount"></td>
+            </tr>
+          <tr>
+            <td>Age Range</td>
+            <td id="ageRange"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+</html>
